@@ -3,54 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kol-Kobja Store</title>
+    <title>Site Under Maintenance</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #666;
+        }
+        .loader {
+            margin: 20px auto;
+            width: 50px;
+            height: 50px;
+            border: 5px solid #ccc;
+            border-top: 5px solid #333;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Kol-Kobja</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#products">Shop</a></li>
-                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="hero">
-        <h2>Welcome to Kol-Kobja</h2>
-        <p>Explore our latest collection now!</p>
-        <a href="#products" class="btn">Shop Now</a>
-    </section>
-    
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="product-list">
-            <div class="product" data-id="1" data-price="20">
-                <img src="product1.jpg" alt="Product 1">
-                <h3>Product 1</h3>
-                <p>$20</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="product" data-id="2" data-price="30">
-                <img src="product2.jpg" alt="Product 2">
-                <h3>Product 2</h3>
-                <p>$30</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-        </div>
-    </section>
-    
-    <section id="cart">
-        <h2>Your Cart</h2>
-        <ul id="cart-items"></ul>
-        <p>Total: $<span id="total-price">0</span></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Kol-Kobja. All Rights Reserved.</p>
-    </footer>
+    <div class="container">
+        <h1>We'll be back soon!</h1>
+        <p>Our website is currently undergoing maintenance. Please check back later.</p>
+        <div class="loader"></div>
+    </div>
 </body>
 </html>
